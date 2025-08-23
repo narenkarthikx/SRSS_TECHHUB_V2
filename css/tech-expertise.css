@@ -1,0 +1,187 @@
+/* Technical Expertise Cards & Scroll Styles */
+
+/* Wrapper container for the expertise section */
+.tech-expertise-wrapper {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Section header styling */
+.tech-section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+/* Horizontal scrolling container */
+.tech-expertise-scroll {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 2rem;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar in IE/Edge */
+  position: relative;
+  scroll-snap-type: x mandatory;
+}
+
+/* Hide scrollbar in webkit browsers */
+.tech-expertise-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Card styles */
+.tech-expertise-card {
+  flex: 0 0 300px;
+  max-width: 300px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+/* Pill badge styling */
+.tech-pill-badge {
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+/* Scroll navigation buttons */
+.scroll-nav-buttons {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  z-index: 20;
+  pointer-events: none;
+  padding: 0 0.5rem;
+}
+
+.scroll-btn {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #1f2937;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+  pointer-events: auto;
+  position: relative;
+}
+
+.scroll-btn:hover {
+  background: white;
+  transform: scale(1.1);
+}
+
+.scroll-btn:active {
+  transform: scale(0.95);
+}
+
+.scroll-btn.scroll-left {
+  left: -0.5rem;
+  position: absolute;
+}
+
+.scroll-btn.scroll-right {
+  right: -0.5rem;
+  position: absolute;
+}
+
+/* Scroll indicator dots */
+.scroll-indicator {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.scroll-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: #d1d5db;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.scroll-dot.active {
+  background: #06b6d4;
+  transform: scale(1.3);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .tech-expertise-card {
+    flex: 0 0 280px;
+    max-width: 280px;
+  }
+  
+  .scroll-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+  
+  .tech-expertise-scroll {
+    padding: 1rem 1.5rem;
+  }
+  
+  .scroll-btn.scroll-left {
+    left: 0;
+  }
+  
+  .scroll-btn.scroll-right {
+    right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-expertise-card {
+    flex: 0 0 260px;
+    max-width: 260px;
+    min-height: 380px;
+  }
+  
+  .scroll-btn {
+    width: 2rem;
+    height: 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .tech-section-header h2 {
+    font-size: 1.75rem;
+  }
+  
+  .tech-section-header p {
+    font-size: 1rem;
+  }
+  
+  .tech-expertise-scroll {
+    padding: 1rem 0.75rem;
+  }
+  
+  .scroll-nav-buttons {
+    padding: 0 0.25rem;
+  }
+}

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Choose Us - SRSS TechHub</title>
+    <!-- Tailwind CSS -->
+    <link href="dist/output.css" rel="stylesheet">
+    <link href="css/brand.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-extrabold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent drop-shadow-lg tracking-wide">SRSS TechHub</h1>
+                        <span class="text-sm text-gray-600 block caption-enhanced">Place to grow</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="about.html" class="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">About Us</a>
+                        <a href="why-us.html" class="text-primary hover:text-secondary px-3 py-2 rounded-md text-sm font-medium transition-colors">Why Us</a>
+                        <a href="services.html" class="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
+                        <a href="contact.html" class="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-700 hover:text-primary">About Us</a>
+                <a href="why-us.html" class="block px-3 py-2 text-primary font-medium">Why Us</a>
+                <a href="services.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Services</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+        <style>
+            /* Mobile menu show/hide utility for all pages */
+            #mobile-menu.show {
+                display: block !important;
+                animation: fadeIn 0.2s;
+            }
+            @keyframes fadeIn {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+            /* Responsive fixes for nav and menu */
+            @media (max-width: 768px) {
+                nav .ml-10 { margin-left: 0 !important; }
+                nav .flex.items-baseline { flex-direction: column; gap: 0.5rem; }
+            }
+        </style>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-[#0f172a] via-[#2563eb] to-[#9333ea] text-white min-h-[320px] flex items-center justify-center py-16 md:py-24">
+        <div class="w-full max-w-3xl mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4 text-white drop-shadow-lg">Why Choose <span class="text-accent">SRSS TechHub</span>?</h1>
+            <p class="text-base md:text-lg max-w-2xl mx-auto mt-4 mb-6 text-white/80">Discover what makes us the preferred choice for technology training, career placement, and product development.</p>
+        </div>
+    </section>
+
+    <!-- The SRSS TechHub Difference -->
+    <section class="py-6 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <h2 class="text-4xl font-bold text-dark mb-4">The SRSS TechHub Difference</h2>
+                <p class="text-xl text-gray-600">Experience transformation like never before</p>
+            </div>
+            
+            <!-- Interactive Value Cards -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-100 p-8 rounded-xl border-l-4 border-primary transform hover:scale-105 transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">Idea-to-Impact Philosophy</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">We don't just teach - we transform ideas into real-world solutions. Every student works on live projects that solve actual business problems.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-primary text-white px-3 py-1 rounded-full text-sm">Live Projects</span>
+                        <span class="bg-primary text-white px-3 py-1 rounded-full text-sm">Real Impact</span>
+                        <span class="bg-primary text-white px-3 py-1 rounded-full text-sm">Portfolio Building</span>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-green-50 to-emerald-100 p-8 rounded-xl border-l-4 border-success transform hover:scale-105 transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-success text-white rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">Career Acceleration</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">Our unique 3-month intensive programs compress 2+ years of learning into focused, practical skill development with guaranteed outcomes.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-success text-white px-3 py-1 rounded-full text-sm">Fast Track</span>
+                        <span class="bg-success text-white px-3 py-1 rounded-full text-sm">Guaranteed Results</span>
+                        <span class="bg-success text-white px-3 py-1 rounded-full text-sm">Industry Ready</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unique Advantages -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-dark mb-4">Our Unique Advantages</h2>
+                <p class="text-xl text-gray-600">What sets us apart in the competitive landscape</p>
+            </div>
+            <div class="unique-advantages-wrapper">
+                <div class="flex overflow-x-auto gap-8 pb-4" style="scroll-snap-type: x mandatory;">
+                    <div class="min-w-[300px] max-w-xs bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform border-t-4 border-primary flex-shrink-0" style="scroll-snap-align: start;">
+                        <div class="text-4xl mb-4 text-primary">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Idea to Product Pipeline</h3>
+                        <p class="text-gray-600">
+                            We don't just teach theory - we help transform your ideas into real, market-ready products with our end-to-end development process.
+                        </p>
+                    </div>
+                    <div class="min-w-[300px] max-w-xs bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform border-t-4 border-secondary flex-shrink-0" style="scroll-snap-align: start;">
+                        <div class="text-4xl mb-4 text-secondary">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Industry Connections</h3>
+                        <p class="text-gray-600">
+                            Our extensive network of 100+ partner companies ensures direct pathways to employment and collaboration opportunities.
+                        </p>
+                    </div>
+                    <div class="min-w-[300px] max-w-xs bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform border-t-4 border-accent flex-shrink-0" style="scroll-snap-align: start;">
+                        <div class="text-4xl mb-4 text-accent">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Personalized Learning</h3>
+                        <p class="text-gray-600">
+                            Every learner gets a customized curriculum based on their goals, current skills, and career aspirations.
+                        </p>
+                    </div>
+                    <div class="min-w-[300px] max-w-xs bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform border-t-4 border-success flex-shrink-0" style="scroll-snap-align: start;">
+                        <div class="text-4xl mb-4 text-success">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">95% Success Rate</h3>
+                        <p class="text-gray-600">
+                            Our proven methodology delivers exceptional results with 95% of our students successfully placed in their desired roles.
+                        </p>
+                    </div>
+                    <div class="min-w-[300px] max-w-xs bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform border-t-4 border-purple-600 flex-shrink-0" style="scroll-snap-align: start;">
+                        <div class="text-4xl mb-4 text-purple-600">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Lifetime Support</h3>
+                        <p class="text-gray-600">
+                            Our relationship doesn't end at graduation. We provide ongoing career support and continuous learning opportunities.
+                        </p>
+                    </div>
+                    <div class="min-w-[300px] max-w-xs bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform border-t-4 border-red-500 flex-shrink-0" style="scroll-snap-align: start;">
+                        <div class="text-4xl mb-4 text-red-500">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Cutting-Edge Tech</h3>
+                        <p class="text-gray-600">
+                            Stay ahead with training in the latest technologies including AI, blockchain, cloud computing, and emerging frameworks.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SRSS TechHub vs Others -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-dark mb-4">SRSS TechHub vs Others</h2>
+                <p class="text-xl text-gray-600">See how we compare to traditional training providers</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden border">
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead class="bg-gradient-to-r from-primary to-purple-600 text-white">
+                            <tr>
+                                <th class="px-6 py-4 text-left font-bold">Features</th>
+                                <th class="px-6 py-4 text-center font-bold">SRSS TechHub</th>
+                                <th class="px-6 py-4 text-center font-bold">Traditional Institutes</th>
+                                <th class="px-6 py-4 text-center font-bold">Online Platforms</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">Personalized Learning Path</td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-check text-success text-xl"></i></td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-times text-red-500 text-xl"></i></td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-minus text-gray-400 text-xl"></i></td>
+                            </tr>
+                            <tr class="bg-gray-50 hover:bg-gray-100">
+                                <td class="px-6 py-4 font-semibold">Industry Mentorship</td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-check text-success text-xl"></i></td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-minus text-gray-400 text-xl"></i></td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-times text-red-500 text-xl"></i></td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">Placement Contact and Guidance</td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-check text-success text-xl"></i></td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-times text-red-500 text-xl"></i></td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-times text-red-500 text-xl"></i></td>
+                            </tr>
+                            <tr class="bg-gray-50 hover:bg-gray-100">
+                                <td class="px-6 py-4 font-semibold">Real Project Experience</td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-check text-success text-xl"></i></td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-minus text-gray-400 text-xl"></i></td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-minus text-gray-400 text-xl"></i></td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">Product Development Support</td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-check text-success text-xl"></i></td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-times text-red-500 text-xl"></i></td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-times text-red-500 text-xl"></i></td>
+                            </tr>
+                            <tr class="bg-gray-50 hover:bg-gray-100">
+                                <td class="px-6 py-4 font-semibold">Lifetime Career Support</td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-check text-success text-xl"></i></td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-times text-red-500 text-xl"></i></td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-times text-red-500 text-xl"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-dark mb-4">Success Stories</h2>
+                <p class="text-xl text-gray-600">Real transformations from our community</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Student" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Arjun Mehta</h4>
+                            <p class="text-sm text-gray-600">Software Engineer at Google</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "SRSS TechHub transformed my career from a non-tech background to landing my dream job at Google. The personalized approach and industry connections made all the difference."
+                    </p>
+                    <div class="flex text-accent mt-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Student" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sneha Patel</h4>
+                            <p class="text-sm text-gray-600">Founder, TechStart Solutions</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "Not only did I learn cutting-edge technologies, but SRSS TechHub also helped me launch my own startup. Their product development support was invaluable."
+                    </p>
+                    <div class="flex text-accent mt-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Student" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Vikram Singh</h4>
+                            <p class="text-sm text-gray-600">Senior Developer at Microsoft</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "The hands-on projects and real-world experience I gained here prepared me perfectly for the challenges at Microsoft. Highly recommend!"
+                    </p>
+                    <div class="flex text-accent mt-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantees Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Our Guarantees</h2>
+                <p class="text-xl text-gray-200">We stand behind our promises</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-white text-primary rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Skill Guarantee</h3>
+                    <p class="text-gray-200">Master the skills or get additional training at no extra cost</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-white text-primary rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Placement Contact and Guidance</h3>
+                    <p class="text-gray-200">Get placed within 6 months or receive full refund</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-white text-primary rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Quality Guarantee</h3>
+                    <p class="text-gray-200">100% satisfaction or money back within 30 days</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">SRSS TechHub</h3>
+                    <p class="text-gray-400 mb-4">From idea to impact — we train talent, place careers, and build products.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-primary"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-primary"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-primary"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-primary"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="why-us.html" class="text-gray-400 hover:text-white">Why Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Training Programs</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Placement Services</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Product Development</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Consulting</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-envelope mr-2"></i>contact.srsstechhub@gmail.com</li>
+                        <li><i class="fas fa-phone mr-2"></i>+91 9445453735</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>Chennai, Tamil Nadu</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 SRSS TechHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

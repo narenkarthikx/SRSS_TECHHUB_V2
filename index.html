@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRSS TechHub - From Idea to Impact</title>
+    <!-- Tailwind CSS -->
+    <link href="dist/output.css" rel="stylesheet">
+    <!-- Custom CSS for Home Page -->
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/brand.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-extrabold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent drop-shadow-lg tracking-wide">SRSS TechHub</h1>
+                        <span class="text-sm text-gray-600 block caption-enhanced">Place to grow</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-primary hover:text-secondary px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="about.html" class="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">About Us</a>
+                        <a href="why-us.html" class="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Why Us</a>
+                        <a href="services.html" class="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
+                        <a href="contact.html" class="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-primary font-medium">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-700 hover:text-primary">About Us</a>
+                <a href="why-us.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Why Us</a>
+                <a href="services.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Services</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <style>
+        /* Mobile menu show/hide utility for all pages */
+        #mobile-menu.show {
+            display: block !important;
+            animation: fadeIn 0.2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        /* Responsive fixes for nav and menu */
+        @media (max-width: 768px) {
+            nav .ml-10 { margin-left: 0 !important; }
+            nav .flex.items-baseline { flex-direction: column; gap: 0.5rem; }
+            .hero { padding-top: 6rem !important; }
+        }
+    </style>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-[#0f172a] via-[#2563eb] to-[#9333ea] text-white min-h-[320px] flex items-center justify-center py-16 md:py-24">
+        <div class="w-full max-w-3xl mx-auto px-4 text-center">
+            <div class="h-6 md:h-8"></div>
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4 text-white drop-shadow-lg">From Idea to <span class="text-accent">Impact</span></h1>
+            <p class="text-xl max-w-2xl mx-auto mb-0 font-medium text-white/90 drop-shadow">We train talent, place careers, and build products</p>
+            <p class="text-base md:text-lg max-w-2xl mx-auto mt-4 mb-6 text-white/80">Transform your vision into reality with our comprehensive training programs, strategic placement services, and innovative product development solutions.</p>
+            <div class="flex flex-row flex-wrap gap-4 justify-center mt-8">
+                <button onclick="startJourney()" class="btn btn-primary px-6 py-2.5 text-base md:text-lg rounded-lg font-semibold shadow-md">
+                    <i class="fas fa-rocket mr-2"></i>Start Your Journey
+                </button>
+                <button onclick="exploreServices()" class="btn btn-secondary px-6 py-2.5 text-base md:text-lg rounded-lg font-semibold shadow-md">
+                    <i class="fas fa-compass mr-2"></i>Explore Services
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Do Section -->
+    <section class="what-we-do">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2>What We Do</h2>
+                <p class="description">
+                    We provide comprehensive solutions across training, placement, and IT Services and Products development
+                </p>
+            </div>
+            <div class="service-cards">
+                <div class="service-card training">
+                    <div class="icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Training Programs</h3>
+                    <p>
+                        Comprehensive skill development programs designed to meet industry demands
+                    </p>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Technical Skills Training</li>
+                        <li><i class="fas fa-check"></i>Soft Skills Development</li>
+                        <li><i class="fas fa-check"></i>Industry Certifications</li>
+                    </ul>
+                </div>
+                <div class="service-card placement">
+                    <div class="icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Placement Services</h3>
+                    <p>
+                        Strategic career placement with top-tier companies and startups
+                    </p>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Career Counseling</li>
+                        <li><i class="fas fa-check"></i>Interview Preparation</li>
+                        <li><i class="fas fa-check"></i>Industry Connections</li>
+                    </ul>
+                </div>
+                <div class="service-card products">
+                    <div class="icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>IT Services and Products</h3>
+                    <p>
+                        End-to-end services and product development from concept to market launch
+                    </p>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Custom Solutions</li>
+                        <li><i class="fas fa-check"></i>MVP Development</li>
+                        <li><i class="fas fa-check"></i>Market Strategy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Work Section -->
+    <section class="how-we-work">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2>How We Work</h2>
+                <p class="subtitle">Our proven methodology for success</p>
+            </div>
+            
+            <!-- Interactive Process Flow -->
+            <div class="process-flow">
+                <!-- Step 1 -->
+                <div class="process-step step-1" data-step="1">
+                    <div class="step-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Discover</h3>
+                    <p>Identify your goals and assess current capabilities</p>
+                </div>
+                
+                <!-- Arrow -->
+                <div class="process-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="process-step step-2" data-step="2">
+                    <div class="step-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>Design</h3>
+                    <p>Create customized roadmap and strategy</p>
+                </div>
+                
+                <!-- Arrow -->
+                <div class="process-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="process-step step-3" data-step="3">
+                    <div class="step-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Deploy</h3>
+                    <p>Execute plan with continuous support and monitoring</p>
+                </div>
+                
+                <!-- Arrow -->
+                <div class="process-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="process-step step-4" data-step="4">
+                    <div class="step-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Deliver</h3>
+                    <p>Achieve measurable results and celebrate success</p>
+                </div>
+            </div>
+            
+            <!-- Step Details -->
+            <div class="step-details">
+                <div class="step-content active" data-step="1">
+                    <h4 style="color: var(--primary-color);">Discovery Phase</h4>
+                    <p>We begin by understanding your unique situation, goals, and challenges through comprehensive assessment and consultation.</p>
+                    <ul>
+                        <li><i class="fas fa-check" style="color: var(--primary-color);"></i>Skills Assessment</li>
+                        <li><i class="fas fa-check" style="color: var(--primary-color);"></i>Goal Setting</li>
+                        <li><i class="fas fa-check" style="color: var(--primary-color);"></i>Market Analysis</li>
+                        <li><i class="fas fa-check" style="color: var(--primary-color);"></i>Resource Evaluation</li>
+                    </ul>
+                </div>
+                <div class="step-content" data-step="2">
+                    <h4 style="color: var(--secondary-color);">Design Phase</h4>
+                    <p>Based on our discovery, we create a personalized roadmap tailored to your specific needs and objectives.</p>
+                    <ul>
+                        <li><i class="fas fa-check" style="color: var(--secondary-color);"></i>Custom Learning Path</li>
+                        <li><i class="fas fa-check" style="color: var(--secondary-color);"></i>Timeline Planning</li>
+                        <li><i class="fas fa-check" style="color: var(--secondary-color);"></i>Resource Allocation</li>
+                        <li><i class="fas fa-check" style="color: var(--secondary-color);"></i>Success Metrics</li>
+                    </ul>
+                </div>
+                <div class="step-content" data-step="3">
+                    <h4 style="color: var(--accent-color);">Deployment Phase</h4>
+                    <p>We execute the plan with hands-on support, regular check-ins, and adaptive adjustments as needed.</p>
+                    <ul>
+                        <li><i class="fas fa-check" style="color: var(--accent-color);"></i>Active Implementation</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-color);"></i>Progress Monitoring</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-color);"></i>Continuous Support</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-color);"></i>Real-time Adjustments</li>
+                    </ul>
+                </div>
+                <div class="step-content" data-step="4">
+                    <h4 style="color: var(--success-color);">Delivery Phase</h4>
+                    <p>We ensure successful completion of objectives with measurable outcomes and continued growth opportunities.</p>
+                    <ul>
+                        <li><i class="fas fa-check" style="color: var(--success-color);"></i>Results Achievement</li>
+                        <li><i class="fas fa-check" style="color: var(--success-color);"></i>Performance Review</li>
+                        <li><i class="fas fa-check" style="color: var(--success-color);"></i>Future Planning</li>
+                        <li><i class="fas fa-check" style="color: var(--success-color);"></i>Ongoing Support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Transform Your Future?</h2>
+            <p>Join thousands who have already started their journey with SRSS TechHub</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-white">
+                    Get Started Today
+                </a>
+                <a href="services.html" class="btn btn-secondary">
+                    View Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="grid md-grid-cols-4">
+                <div>
+                    <h3 class="srss-gradient-text">SRSS TechHub</h3>
+                    <p class="text-gray-400 mb-4">From idea to impact — we train talent, place careers, and build products.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="why-us.html">Why Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Training Programs</a></li>
+                        <li><a href="services.html">Placement Services</a></li>
+                        <li><a href="services.html">IT Services and Products</a></li>
+                        <li><a href="services.html">Consulting</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact Info</h4>
+                    <ul class="text-gray-400">
+                        <li><i class="fas fa-envelope" style="margin-right: 0.5rem;"></i>contact.srsstechhub@gmail.com</li>
+                        <li><i class="fas fa-phone" style="margin-right: 0.5rem;"></i>+91 9445453735</li>
+                        <li><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i>Chennai, Tamil Nadu</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="border-top: 1px solid var(--gray-700); margin-top: 2rem; padding-top: 2rem; text-align: center; color: var(--gray-400);">
+                <p>&copy; 2025 SRSS TechHub. All rights reserved.</p>
+                        <section class="bg-gradient-to-br from-[#0f172a] via-[#2563eb] to-[#9333ea] text-white pt-24 pb-20">
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

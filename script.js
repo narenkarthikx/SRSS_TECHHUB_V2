@@ -379,6 +379,59 @@ window.addEventListener("scroll", () => {
 // Add loading animation
 window.addEventListener("load", () => {
   document.body.classList.add("loaded")
+  
+  // Initialize scroll reveal animations
+  initScrollReveal()
+})
+
+// Scroll Reveal Animation
+function initScrollReveal() {
+  const revealElements = document.querySelectorAll('.scroll-reveal, .service-card, .process-step')
+  
+  const revealOnScroll = () => {
+    const windowHeight = window.innerHeight
+    const revealPoint = 100
+    
+    revealElements.forEach(element => {
+      const elementTop = element.getBoundingClientRect().top
+      
+      if (elementTop < windowHeight - revealPoint) {
+        element.classList.add('revealed')
+      }
+    })
+  }
+  
+  // Initial check
+  revealOnScroll()
+  
+  // Check on scroll with throttling
+  let isScrolling = false
+  window.addEventListener('scroll', () => {
+    if (!isScrolling) {
+      window.requestAnimationFrame(() => {
+        revealOnScroll()
+        isScrolling = false
+      })
+      isScrolling = true
+    }
+  })
+}
+
+// Smooth scroll for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    const href = this.getAttribute('href')
+    if (href === '#') return
+    
+    e.preventDefault()
+    const target = document.querySelector(href)
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
+  })
 })
 
 window.addEventListener("orientationchange", () => {
